@@ -1,0 +1,103 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    font-family: poppins;
+}
+
+.container{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+h1{
+    font-size: 6vw;
+    padding: 1vw;
+    color: #161616;
+}
+
+.game{
+    height: 40vh;
+    width: 55%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.box{
+    height: 12vh;
+    width: 29%;
+    font-size: 3vw;
+    font-weight: bold;
+    border-radius: 0.5vw;
+    background-color: white;
+    color: #161616;
+    border: none;
+    cursor: pointer;
+  
+}
+
+.show{
+    height: 100vh;
+    width: 100%;
+    background-color: #dce0ac;
+    position: absolute;
+    top: 0%;
+    z-index: 9999;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+ 
+}
+
+.overlay-box{
+
+    width: 27%;
+    height: 13vh;
+    padding:  2vh 1vw;
+    background-color: white ;
+    position: absolute;
+    border-radius: .8vw;
+    display: grid;
+}
+.overlay-box .restart-button{
+    place-self: center;
+}
+.overlay-box>h2{
+    place-self: center;
+    font-size: 2vw;
+}
+
+.restart-button , .start-button{
+    margin-top: 2vh;
+    padding: 0.7vh 1vw;
+    font-size: 1.5vw;
+    border: none;
+    border-radius: 0.7vw;
+    background-color:#161616 ;
+    color: white;
+    font-weight: 500;
+    cursor: pointer;
+    place-self: center;
+
+}
+
+.main{
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #dce0ac;
+    text-align: center;
+}
+
+body{
+    overflow: hidden;
+}
+
+
+
